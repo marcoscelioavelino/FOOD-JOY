@@ -1,0 +1,427 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333; /* Cor escura para os textos */
+    line-height: 1.6;
+}
+
+/* Estilos gerais */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 15px;
+}
+
+/* Ajustando o header */
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+/* Ajustando o input do header */
+header input::placeholder {
+    color: black;
+}
+
+/* Estilo do nav */
+.section1 nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(255, 251, 0);
+    padding: 3px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.section1 nav div {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #070707;
+    min-width: 90px;
+}
+
+.section1 nav div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Hover para as imagens de navegação */
+.section1 nav div img:hover {
+    transform: scale(1.5);
+}
+
+/* Estilo do rodapé */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 225, 0);
+}
+
+footer div {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer div img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+footer div img:hover {
+    transform: scale(1.5);
+}
+
+/* Estilo das seções */
+.divsec {
+    background-color: #000000;
+    padding: 5%;
+}
+
+.section2 {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.section2 input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.section2 h2 {
+    color: #ffd700; /* Amarelo para destaque */
+    margin-bottom: 20px;
+}
+
+/* Imagem de promoção */
+.section2 .promo-banner img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para a seção de produtos */
+.section3 {
+    margin-bottom: 300px;
+}
+
+/* Estilo da lista de produtos */
+.section3 .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+.section3 .product {
+    border: 1px solid #ffd700;
+    padding: 15px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section3 .product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 90%;
+}
+
+.estilocarrinho {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: orange;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+    text-align: center;
+    padding: 20px;
+    width: 45%;
+    background-color: red;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background-color: yellow;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f1c40f;
+}
+
+#formulario-pedido {
+    text-align: left;
+    background-color: orange;
+    padding: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+#order-form label {
+    display: block;
+    margin: 2px 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+#order-form input[type="radio"] {
+    margin-right: 3px;
+    accent-color: blue;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: yellow;
+}
+
+#cart li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+}
+
+#total-price {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #ff0000;
+}
+
+button[type="submit"] {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f1c40f;
+}
+
+#lista-pedidos {
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#lista-pedidos div {
+    background-color: #ffffff;
+    border: 1px solid #574f4c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-pedidos div p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+#lista-pedidos div ul {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-pedidos div ul li {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
+#mensagem-status {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.alinhalink {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/* Otimização das forms e elementos do carrinho */
+.estilizaforms {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.estilizaforms label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #000;
+}
+
+.estilizaforms input[type="text"],
+.estilizaforms input[type="tel"],
+.estilizaforms select,
+.estilizaforms input[type="radio"],
+.estilizaforms input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.estilizaforms .fields-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.estilizaforms .fields-container div {
+    flex: 1;
+}
+
+.estilizaforms input[type="radio"],
+.estilizaforms input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.estilizaforms button[type="submit"] {
+    background-color: #f4c542;
+    color: #000;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.estilizaforms button[type="submit"]:hover {
+    background-color: #e3b72c;
+}
+
+.estilizaforms h3 {
+    color: #000;
+}
+
+.estilizaforms h3:hover {
+    color: #ffd60b;
+}
+
+
+
+
+#formulario-pedido input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-pedido input[type="text"]::placeholder {
+    color: #555;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+

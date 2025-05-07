@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/hamb2.ico" type="image/x-icon">
+    <title>FOOD JOY - APP Delivery de Comidas</title>
+</head>
+<body>
+   
+    
+    <div class="icons">
+    <header>
+         
+        <div class="icons">
+        <span class= "icons">FoodJoy🍔</span> <!-- Nome do site ou marca exibido no cabeçalho -->
+        </div>
+
+        <div class="icons">
+        <span class= "icons">🔔Push</span> <!-- Ícone de notificação com texto -->
+        </div>
+
+         <div class="icons">
+         <span class= "icons">🛒Car</span> <!-- Ícone de carrinho com texto -->
+         </div>
+
+         <div class="icons"></div>
+         <input class= "icons" type="text" placeholder="Busque seu lanche..."> <!-- Campo de entrada para buscas -->
+         </div>
+ 
+ </div>   
+</header>
+
+
+
+<section class="section1"> <!-- Section dedicada à navegação com ícones -->
+    <nav>
+        <div>
+        <img src="assets/pizza.png" alt="Pizza"><br>Pizza
+        </div> <!-- Ícone e texto para categoria 'Pizza' -->
+
+        <div>
+        <img src="assets/hamburguer.png" alt="Hamburguer"><br>burguer
+        </div> <!-- Ícone e texto para categoria 'Hamburguer' -->
+        
+        <div><img src="assets/sushi.png" alt="Sushi"><br>Sushi</div> <!-- Ícone e texto para categoria 'Sushi' -->
+        <div><img src="assets/salgados.png" alt="Salgados"><br>Salgados</div> <!-- Ícone e texto para categoria 'Salgados' -->
+        <div><img src="assets/bebidas.png" alt="Bebidas"><br>Bebidas</div> <!-- Ícone e texto para categoria 'Bebidas' -->
+        <div><img src="assets/doces.png" alt="Doces"><br>Doces</div> <!-- Ícone e texto para categoria 'Doces' -->
+    </nav>
+</section>
+
+
+
+<div id="mensagem-status" style="display: none; text-align: center; padding: 20px;">
+    <h1 id="status-message">
+        Seu pedido foi enviado com sucesso, aguarde a loja preparar e fazer o envio.
+    </h1>
+    <button id="confirmar-recebimento" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; display: none;">
+        Confirmar Recebimento
+    </button>
+</div>
+
+
+
+<div id="formulario-pedido">
+    <h1>Carrinho</h1>
+    <ul id="cart"></ul>
+    <h3 id="total-price">Total: R$ 0,00</h3>
+
+
+    <form id="order-form">
+        <input type="text" id="nomeCliente" placeholder="Seu nome" required><br><br>
+        <input type="text" id="enderecoCliente" placeholder="Endereço para entrega" required><br><br>
+        <input type="text" id="telefoneCliente" placeholder="Telefone para contato" required> <br><br>
+
+
+
+        <h3>Escolha a forma de pagamento:</h3>
+        <form id="order-form">
+            <label><input type="radio" name="pagamento" value="Dinheiro" required> Dinheiro</label><br>
+            <label><input type="radio" name="pagamento" value="Crédito"> Crédito</label><br>
+            <label><input type="radio" name="pagamento" value="Débito"> Débito</label><br>
+            <label><input type="radio" name="pagamento" value="Pix"> Pix</label><br>
+            <button type="submit">Enviar Pedido</button>
+            <button id="clear-cart">Esvaziar Carrinho</button>
+            <br><br> 
+        </form>
+        
+    </div>
+
+    
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+<footer>
+    <div>
+        <a href="index.html">
+            <img src="assets/home.png" alt="Home"><br>Início
+        </a>
+    </div>
+
+    <div>
+        <a href="cardapio.html">
+            <img src="assets/menu.png" alt="Menu"><br>Cardápio
+        </a>
+    </div>
+    <div>
+        <a href="statuspedidos.html">
+            <img src="assets/pedidos.png" alt="Pedidos"><br>Pedidos
+        </a>
+    </div>
+    <div>
+        <a href="perfil.html">
+            <img src="assets/perfil.png" alt="Perfil"><br>Perfil
+        </a>
+    </div>
+    
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
